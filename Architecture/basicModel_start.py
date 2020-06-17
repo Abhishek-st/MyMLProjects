@@ -41,7 +41,7 @@ lr = 0.001
 batch_size = 64
 num_epoch = 5
 
-train_dataset = datasets.MNIST('/content',train=True, transform=transforms.ToTensor(), download = True)
+train_dataset = datasets.MNIST('',train=True, transform=transforms.ToTensor(), download = True)
 train_loader = DataLoader(dataset = train_dataset, batch_size=batch_size, shuffle=True)
 
 test_dataset = datasets.MNIST('/content',train=False, transform=transforms.ToTensor(), download = True)
